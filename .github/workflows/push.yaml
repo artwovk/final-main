@@ -32,8 +32,8 @@ jobs:
                 images: artwovk/final-main
 
             - name: Build
-             uses: docker/build-push-action@v6
-             with:
+              uses: docker/build-push-action@v6
+              with:
                 context: .
                 push: true
                 tags: ${{ steps.meta.outputs.tags }}
